@@ -1,0 +1,4 @@
+[
+  {"Name":"Nikola","Surname":"Travica","City":"Sisak","Address":"Ante Starcevica 2","TelephoneNumber":"1337","Email":"nikola@gmail.com","Oib":"13374201337"},
+  {"Name":"Duro","Surname":"Horvat","City":"Zadra","Address":"Matice Hrvatske 76","TelephoneNumber":"1668","Email":"duro@gmail.com","Oib":"01987654321"}
+]

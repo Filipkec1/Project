@@ -1,0 +1,8 @@
+FROM mcr.microsoft.com/mssql/server
+
+ENV SA_PASSWORD "1Q2w3e4r$"
+ENV ACCEPT_EULA "Y"
+
+COPY db/ProjectDb/ /opt/scripts/
+
+RUN ( /opt/mssql/bin/sqlservr --accept-eula & ) | grep -q "Service Broker manager has started" && /opt/scripts/helper.sh

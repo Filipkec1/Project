@@ -1,0 +1,14 @@
+Table "People.Person"{
+  Id uniqueidentifier [pk, default: `NEWID()`]
+  Name varchar(250) [not null]
+  Surname varchar(250) [not null]
+  City varchar(250) [not null]
+  Address varchar(250) [not null]
+  TelephoneNumber varchar(20) [not null] 
+  Email varchar(100) [not null] 
+  OIB char(11) [not null]
+    Indexes
+    {
+      OIB [name: "IX_Person_Oib", unique]
+    }
+}
